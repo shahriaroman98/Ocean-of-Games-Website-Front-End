@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ocean of Games</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<section id="home">
+		
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		   <div class="container">
+			    <a class="navbar-brand" id="home" href="#">OceanOf<span class="text-warning">Games</span></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			        
+			        <li class="nav-item">
+			          <a class="nav-link" href="#home">Home</a>
+			        </li>
+			        
+			        <li class="nav-item">
+			          <a class="nav-link" href="#gallery">Gallery</a>
+			        </li>
+			        
+			        <li class="nav-item">
+			          <a class="nav-link" href="#collection">Collection</a>
+			        </li>
+			        
+			        <li class="nav-item">
+			          <a class="nav-link" href="#download">Download</a>
+			        </li>
+			        
+			        <li class="nav-item">
+			          <a class="nav-link" href="#contact">Contact</a>
+			        </li>
+
+			        <li class="nav-item">
+			          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+			        </li>
+
+			        <li class="nav-item">
+			          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</a>
+			        </li>
+			        
+			      </ul>
+			      
+			    </div>
+		  </div>
+    </nav>
+
+
+
+    	<!-- LoginModal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title text-warning" id="exampleModalLabel">Already have an account? Login Here...</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	                        <form>
+								<div class="mb-4">
+									<label>Your phone no.</label>
+									<input type="number" class="form-control" placeholder="Enter phone number" required>
+								</div>
+								<div class="mb-4">
+									<label>Password</label>
+									<input type="password" class="form-control" placeholder="Enter your password" required>
+								</div>
+								<div class="mb-4">
+									<input type="checkbox" class="form-check-input"><labels>Save Changes?</label>
+								</div>
+							</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-warning">Login</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- SignupModal -->
+	<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title text-warning" id="exampleModalLabel">New to this site? Signup Here...</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	                        <form>
+	                        	<div class="mb-3">
+									<label>Your Phone No.</label>
+									<input type="number" class="form-control" placeholder="Enter phone number" required>
+								</div>
+								<div class="mb-3">
+									<label>Your Email Address</label>
+									<input type="email" class="form-control" placeholder="Enter your email" required>
+								</div>
+								<div class="mb-3">
+									<label>Your Full Name</label>
+									<input type="text" class="form-control" placeholder="Enter your name" required>
+								</div>
+								<div class="mb-3">
+									<label>Password</label>
+									<input type="password" class="form-control" placeholder="Enter your password" required>
+								</div>
+								<div class="mb-3">
+									<label>Re-enter Password</label>
+									<input type="password" class="form-control" placeholder="Re-enter your password" required>
+								</div>
+								<div class="mb-3">
+									<input type="checkbox" class="form-check-input"><label>Remember me?</label>
+								</div>
+							</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-warning">Login</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+   
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  
+		  <div class="carousel-inner">
+
+		    <div class="carousel-item active bg-1">      
+		      <div class="carousel-caption">
+		        <h5>Battlefield <span class="text-warning">Hardline</span></h5>
+		        <p>Battlefield Hardline is a first-person shooter video game developed by Visceral Games and published by Electronic Arts.</p>
+		        <a href="https://en.wikipedia.org/wiki/Battlefield_Hardline" target="_blank" class="bg-warning text-white">Learn More</a>
+		      </div>
+		    </div>
+
+		    <div class="carousel-item bg-2">      
+		      <div class="carousel-caption">
+		        <h5>Ghost-Recon <span class="text-warning">Wildlands</span></h5>
+		        <p>Tom Clancy's Ghost Recon Wildlands is a third-person tactical shooter video game developed by Ubisoft Paris and Ubisoft Milan , and published by Ubisoft.</p>
+		        <a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Wildlands" target="_blank" class="bg-warning text-white">Learn More</a>
+		      </div>
+		    </div>
+
+		    <div class="carousel-item bg-3">      
+		      <div class="carousel-caption">
+		        <h5>Far-Cry <span class="text-warning">Primal</span></h5>
+		        <p>Far Cry Primal is a 2016 action-adventure game developed by Ubisoft Montreal and published by Ubisoft.</p>
+		        <a href="https://en.wikipedia.org/wiki/Far_Cry_Primal" target="_blank" class="bg-warning text-white">Learn More</a>
+		      </div>
+		    </div>
+
+		    <div class="carousel-item bg-4">      
+		      <div class="carousel-caption">
+		        <h5>Call of Duty <span class="text-warning">Modern Warfare 2</span></h5>
+		        <p>Call of Duty: Modern Warfare II is a 2022 first-person shooter video game developed by Infinity Ward and published by Activision.</p>
+		        <a href="https://en.wikipedia.org/wiki/Call_of_Duty:_Modern_Warfare_II_(2022_video_game)#Plot" target="_blank" class="bg-warning text-white">Learn More</a>
+		      </div>
+		    </div>
+
+		    <div class="carousel-item bg-5">      
+		      <div class="carousel-caption">
+		        <h5>Metro <span class="text-warning">Exodus</span></h5>
+		        <p>Metro Exodus is a first-person shooter video game that was developed by 4A Games and published by Deep Silver.</p>
+		        <a href="https://en.wikipedia.org/wiki/Metro_Exodus" target="_blank" class="bg-warning text-white">Learn More</a>
+		      </div>
+		    </div>
+
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+  
+  
+  
+ 
+  
+		  <div class="carousel-indicators">
+
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img class="d-block w-100" src="images/img1.jpg" class="img-fluid"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"><img class="d-block w-100" src="images/img2.jpg" class="img-fluid"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"><img class="d-block w-100" src="images/img3.jpg" class="img-fluid"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"><img class="d-block w-100" src="images/img4.jpg" class="img-fluid"></button>
+
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"><img class="d-block w-100" src="images/img5.jpg" class="img-fluid"></button>
+
+		  </div>
+    </div>
+
+
+	</section>
+
+
+    <section id="gallery">
+    	
+
+    	<div class="container">
+
+    	   <h1 class="text-center text-white py-5">Our Gallery</h1>
+
+    	     <div class="img-box">
+    	     	
+    	     	<div class="img-card" style="background-image: url(images/img6.jpg)"></div>
+		        <div class="img-card" style="background-image: url(images/img7.jpg)"></div>
+		        <div class="img-card" style="background-image: url(images/img8.jpg)"></div>
+		        <div class="img-card" style="background-image: url(images/img9.jpg)"></div>
+		        <div class="img-card" style="background-image: url(images/img10.jpg)"></div>
+
+    	     </div>
+
+
+    </section>
+
+
+
+    <section id="collection">
+
+    	<div class="container">
+
+    		<h1 class="text-center text-white py-5">Our Latest Collections</h1>
+    	
+
+    	   <div class="row py-3">
+
+			<div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img11.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">The Witcher 3</h2>
+					</div>
+					<p>The Witcher 3: Wild Hunt is a 2015 action role-playing game developed and published by CD Projekt. It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third game in The Witcher video game series, played in an open world with a third-person perspective. The games follow the Witcher series of fantasy novels written by Andrzej Sapkowski.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img12.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">The Crew 2</h2>
+					</div>
+					<p>The Crew 2 is a 2018 open world racing video game developed by Ubisoft Ivory Tower and published by Ubisoft for PlayStation 4, Windows, Xbox One, and Google Stadia. It is the sequel to 2014's The Crew. It features a persistent open world environment for free-roaming across a scaled-down recreation of the contiguous United States.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/The_Crew_2#" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img13.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">FIFA 18</h2>
+					</div>
+					<p>FIFA 18 is a football simulation video game developed and published by Electronic Arts and released worldwide on 29 September 2017.Portuguese footballer Cristiano Ronaldo, at the time contracted to Real Madrid, appears as the cover athlete of the regular edition, as well as the alternate covers of the Icon.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/FIFA_18" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+		</div>
+
+
+
+		<div class="row py-3">
+
+			<div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img14.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Call of Duty: Black Ops 4</h2>
+					</div>
+					<p>Call of Duty: Black Ops 4 (stylized as Call of Duty: Black Ops IIII) is a 2018 multiplayer first-person shooter developed by Treyarch and published by Activision. It was released worldwide for PlayStation 4, Windows, and Xbox One on October 12, 2018. It is a sequel to the 2015 game Call of Duty: Black Ops III, the fifth entry in the Black Ops sub-series.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/Call_of_Duty:_Black_Ops_4" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img15.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Watch Dogs 2</h2>
+					</div>
+					<p>Watch Dogs 2 (stylized as WATCH_DOGS 2) is a 2016 action-adventure game developed by Ubisoft Montreal and published by Ubisoft. It is the sequel to 2014's Watch Dogs and the second installment in the Watch Dogs series. It was released for the PlayStation 4, Xbox One and Windows in November 2016, for Amazon Luna in November 2020.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/Watch_Dogs_2" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img16.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Devil May Cry 5</h2>
+					</div>
+					<p>Devil May Cry 5 is a 2019 action-adventure game developed and published by Capcom. It is the sixth installment overall and the fifth mainline installment in the Devil May Cry series. Capcom released it for PlayStation 4, Windows, and Xbox One on 8 March 2019. The game takes place five years after Devil May Cry 4.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://en.wikipedia.org/wiki/Devil_May_Cry_5" class="btn btn-outline-info" target="_blank">View Details</a>
+				</div>
+			 </div>
+		  </div>
+
+		</div>
+
+	</div>
+
+
+
+    </section>
+
+
+
+    <section id="download">
+    	
+
+    	<div class="container">
+    		
+
+    		<h1 class="text-center text-white py-5">Download / Buy Now</h1>
+
+    		<div class="row py-3">
+
+			<div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img17.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Forza Horizon 4</h2>
+					</div>
+					<p>Forza Horizon 4 is a 2018 racing video game developed by Playground Games and published by Microsoft Studios. It was released on 2 October 2018 for Windows and Xbox One after being announced at Xbox's E3 2018 conference. An enhanced version of the game was released on Xbox Series X/S on 10 November 2020.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://oceanofgames.com/forza-horizon-4-ultimate-edition-v1-467-476-0-free-download/" class="btn btn-outline-success" target="_blank">Free Download</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img18.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">HALO 4</h2>
+					</div>
+					<p>Halo 4 is a 2012 first-person shooter video game developed by 343 Industries and published by Microsoft Studios for the Xbox 360 video game console. Halo 4's story follows a cybernetically enhanced human supersoldier, Master Chief, and his artificial intelligence construct Cortana, as they encounter unknown threats.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.microsoft.com/en-bd/p/halo-4/9p8cfxzh93ck?activetab=pivot:overviewtab" class="btn btn-outline-warning" target="_blank">Buy Now</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img19.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">HITMAN</h2>
+					</div>
+					<p>Hitman is a 2016 stealth video game developed by IO Interactive and published by Square Enix. The game, which has six episodes, is the sixth mainline entry in the Hitman franchise, the first installment of the World of Assassination trilogy, and the successor to Hitman: Absolution (2012).  The game presents the player with various assassination opportunities.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.microsoft.com/en-bd/p/hitman-world-of-assassination/9pdrm8bfw1x1?activetab=pivot:overviewtab" class="btn btn-outline-warning" target="_blank">Buy Now</a>
+				</div>
+			 </div>
+		  </div>
+
+		</div>
+
+
+
+		<div class="row py-3">
+
+			<div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img20.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Resident Evil 7 Biohazard</h2>
+					</div>
+					<p>Resident Evil 7: Biohazard is a 2017 survival horror game developed and published by Capcom. The player controls Ethan Winters as he searches for his long-missing wife in a derelict plantation occupied by an infected family, solving puzzles and fighting enemies. Resident Evil 7 diverges from the more action-oriented Resident Evil 5 and Resident Evil 6.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://oceanofgames.com/resident-evil-7-biohazard-gold-edition-12-dlcs-free-download-ofgv-6248487/" class="btn btn-outline-success" target="_blank">Free Download</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img21.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Grand Theft Auto V</h2>
+					</div>
+					<p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://oceanofgames.com/gta-v-grand-theft-auto-v-fitgirl-repack-with-all-updates-free-download-ofgv-7761923/" class="btn btn-outline-success" target="_blank">Free Download</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img22.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">God of War</h2>
+					</div>
+					<p>God of War is an action-adventure game franchise created by David Jaffe at Sony's Santa Monica Studio. It began in 2005 on the PlayStation 2 (PS2) video game console and has become a flagship series for PlayStation, consisting of nine installments across multiple platforms. Based on ancient mythologies, a Spartan warrior and later the Greek God of War.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://oceanofgames.com/god-of-war-pc-game-setup-free-download-ofgv-9459534/" class="btn btn-outline-success" target="_blank">Free Download</a>
+				</div>
+			 </div>
+		  </div>
+
+		</div>
+
+
+
+		<div class="row py-3">
+
+			<div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img23.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Forza Horizon 5</h2>
+					</div>
+					<p>Forza Horizon 5 is a 2021 racing video game developed by Playground Games and published by Xbox Game Studios. It is the fifth Forza Horizon title and twelfth main instalment in the Forza series. The game is set in a fictionalised representation of Mexico. It was released on 9 November 2021 for Windows, Xbox One, and Xbox Series X/S.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.microsoft.com/en-bd/p/forza-horizon-5-standard-edition/9nkx70bbcdrn?activetab=pivot:overviewtab" class="btn btn-outline-warning" target="_blank">Buy Now</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img24.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">The Amazing Spider Man 2</h2>
+					</div>
+					<p>The Amazing Spider-Man 2 is an open world action-adventure video game based on the Marvel Comics character Spider-Man and the 2014 film of the same name. Developed by Beenox, it is the sequel to 2012's The Amazing Spider-Man, and takes place within the same continuity, different from that of the films.The game was released on April 29 in North America.</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://oceanofgames.com/the-amazing-spider-man-2-game-free-download-3268617/" class="btn btn-outline-success" target="_blank">Free Download</a>
+				</div>
+			 </div>
+		  </div>
+
+
+		  <div class="col-lg-4">
+			 <div class="card">
+				<img src="images/img25.jpg" style="height: 200px;">
+				<div class="body">
+					<div class="card-title">
+						<h2 class="text-center">Flight Simulator</h2>
+					</div>
+					<p>Microsoft Flight Simulator is a series of flight simulator programs for MS-DOS, Classic Mac OS and Microsoft Windows operating systems. It was an early product in the Microsoft application portfolio and differed significantly from Microsoft's other software. Microsoft Flight Simulator is the longest-running software product line for Microsoft</p>
+				</div>
+				<div class="card-footer">
+					<a href="https://www.microsoft.com/en-bd/p/microsoft-flight-simulator-premium-deluxe-40th-anniversary-edition/9pj15d3rdxmv?activetab=pivot:overviewtab" class="btn btn-outline-warning" target="_blank">Buy Now</a>
+				</div>
+			 </div>
+		  </div>
+
+		</div>
+
+
+    	</div>
+
+
+
+    </section>
+
+
+
+    <section id="contact">
+    	
+
+    	<div class="container">
+    		
+    		<h1 class="text-center text-white text pt-5">Contact</h1>
+    		<h3 class="text-center text-danger pb-5">*If you face any kind of problem, then immediately contact with us by filling this form down below.</h3>
+
+
+    		<div class="row py-5 g-3">
+
+            <div class="col-md-6 first_col ">
+                <h1 class="text-center mt-3">Contact Us</h1>
+                <form class="p-4 mt-5">
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Your Full name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Messege Here</label>
+                        <textarea  type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Say something here..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-primary">Send Report</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6 sec_col">
+                <img src="images/contact.png"
+                    class="img-fluid">
+            </div>
+        </div>
+ 
+
+
+        <div class="wrapper">
+		        <div class="box-area">
+		            <div class="box">
+		                <i class="fa fa-phone"></i>
+		            </div>
+		            <div class="box">
+		                <i class="fa fa-facebook"></i>
+		            </div>
+		            <div class="box">
+		                <i class="fa fa-whatsapp"></i>
+		            </div>
+		            <div class="box">
+		                <i class="fa fa-instagram"></i>
+		            </div>
+		            <div class="box">
+		                <i class="fa fa-github"></i>
+		            </div>
+		        </div>
+		    </div>
+
+
+		    <div class="text-center text-white">
+		        	
+		        	<marquee behavior="scroll" direction="right" scrollamount="20"><p>&copy; 2023 by Shahria Roman | All Rights Reserved</p></marquee>
+
+		    </div>
+
+
+    	</div>
+
+
+
+    </section>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+</body>
+</html>
